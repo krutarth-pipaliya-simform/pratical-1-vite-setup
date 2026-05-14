@@ -1,22 +1,20 @@
-import { useState } from "react";
-
 function App() {
-    const [name] = useState("Krutarth Pipaliya");
-    const [email] = useState("krutarth.pipaliya@simformsolutions.com");
-    const [githubURL] = useState(
-        "https://github.com/krutarth-pipaliya-simform",
-    );
-    const [intro] = useState("still figuring out");
     return (
         <>
-            <div>My name is {name}</div>
+            <div>My name is Krutarth Pipaliya</div>
             <div>
-                My email is <a href={"mailto:" + email}>{email}</a>
+                My email is{" "}
+                <a href="mailto:krutarth.pipaliya@simformsolutions.com">
+                    krutarth.pipaliya@simformsolutions.com
+                </a>
             </div>
             <div>
-                My github URL is <a href={githubURL}>{githubURL}</a>
+                My github URL is{" "}
+                <a href="https://github.com/krutarth-pipaliya-simform">
+                    https://github.com/krutarth-pipaliya-simform
+                </a>
             </div>
-            <div>My intro is {intro}</div>
+            <div>My intro is "still figuring out"</div>
         </>
     );
 }
